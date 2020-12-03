@@ -18,8 +18,7 @@ new_df = new_df.sort_values(by=['Total'], ascending=[False]).head(20)
 data = [go.Bar(x=new_df['NOC'], y=new_df['Total'])]
 
 # Preparing layout
-layout = go.Layout(title='Total Olympic Medals by Country', xaxis_title="Country",
-                   yaxis_title="Total Medals")
+layout = go.Layout(title='2016 Olympics Top 20 Medal Count', xaxis_title="Country", yaxis_title="# of Total Medals")
 
 # Plot the figure and saving in a html file
 fig = go.Figure(data=data, layout=layout)
