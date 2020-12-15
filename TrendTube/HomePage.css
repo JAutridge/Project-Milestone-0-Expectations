@@ -1,0 +1,118 @@
+/*styling for the whole page goes here*/
+body {
+    font-size: 12px;
+    background-color: #000000;
+    color: #FFFFFF;
+
+}
+
+title {
+    font-style: normal;
+    font-size: 42px;
+    text-align: center;
+}
+/*styling for the page title*/
+h1 {
+    font-style: normal;
+    font-size: 42px;
+    text-align: center;
+    background-color: #000000;
+    color: #f8f8f8;
+}
+h2 {
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    background-color: #000000;
+    color: #f8f8f8;
+}
+a{
+    color: #FFFFFF;
+    tab-index: 10;
+}
+mean {
+    font-style: oblique;
+    font-size: 12px;
+    text-align: start;
+    background-color: #000000;
+    color: #f8f8f8;
+}
+footer {
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+    background-color: #000000;
+    color: #f8f8f8;
+}
+.slider {
+    width: 1000px;
+    height: 374px;
+    margin: 100px auto;
+    animation: slide 10s infinite;
+
+}
+
+main .card{
+
+border-radius: 10px;
+    padding: 10px;
+    box-shadow: 8px 10px 5px darkgray;
+    text-align: center;
+    font-style: normal;
+background-color: black;
+}
+.card .title{
+    font-size: 20px;
+    font-weight: bold;
+background-color: black;
+}
+.card .image{
+
+    max-width: 100%;
+    border-radius: 5px;
+background-color: black;
+}
+.card .text{
+    font-size: 18px;
+    text-align: center;
+    background-color: black;
+}
+.card .h2{
+     font-size: 25px;
+     text-align: center;
+}
+.buy-button{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.buy-button:hover{
+  box-shadow: 8px 5px 5px darkgray;
+   color: darkgray;
+
+}
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+@keyframes slide {
+    35%{
+        background: url("image/Music.jpg");
+    }
+ 70%{
+        background: url("image/Gaming.jpg");
+    }
+     100%{
+        background: url("image/News.png");
+    }
+
+}
+.yt-form
+{
+font-size: 50px;
+}
+.videoList{
+
+}
