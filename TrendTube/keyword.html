@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get YouTube Video by Keyword</title>
+     <link rel="stylesheet" href="HomePage.css" />
+     <script type="text/javascript" src="login.js"></script>
+    <style>
+        .paginate{
+            margin-right: 5px;
+        }
+        li {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<header>
+<p><h1>
+ <a href="HomePage.html">
+  <img src="image/TrendTube.png">
+ </a>
+</h1></p>
+
+</header>
+
+
+<center>
+    <h1>Search For A Video</h1>
+<form id="yt-form">
+    <p><input type="text" id="keyword-input" placeholder="Enter keyword" size="50" required></p>
+    <p><input type="number" id="maxresult-input" placeholder="Max Results" min="1" max="50" size="50" required></p>
+    <p>
+        <select id="order-input" required>
+            <option value="">--SELECT ORDER--</option>
+            <option value="date">Date</option>
+            <option value="rating">Rating</option>
+            <option value="relevance">Relevance</option>
+            <option value="title">Title</option>
+            <option value="viewCount" selected>View Count</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+</form>
+</center>
+ <h2><div id="videoListContainer" class="videoList"></div></h2>
+
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="keyword.js"></script>
+</body>
+</html>
