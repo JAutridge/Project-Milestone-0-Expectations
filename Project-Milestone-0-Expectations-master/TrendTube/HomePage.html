@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrendTube</title>
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+</head>
+
+<body>
+<header>
+    <p><h1>
+    <a href="HomePage.html">
+        <img src="image/TrendTube.png">
+    </a>
+</h1></p>
+
+
+</header>
+
+<h2>
+    <div class="topnav">
+        <a  class="active" href="HomePage.html">Home<img src="image/TrendTube.png" height="20" width="20"/></a><br>
+        <a href="keyword.html">Search<img src="image/Search.png" height="20" width="20"/></a><br>
+        <a href="CountryTrends.html">Trending By Country</a><br>
+        <a href="Login.html">Sign-In<img src="image/Login.png" height="20" width="20"/></a>
+    </div>
+</h2>
+<div> <p class="p">Welcome to TrendTube, where you can find videos that are less influenced by youtube's algorithm. We filter videos by popularity, relevance and try to factor in the
+date as well. Please click on a category below and the videos will show up underneath all of the categories.</p></div>
+<center>
+    <div>
+            <button class="inner" id="music" value="10" onclick="execute()">
+                <img width="300" height="300" src="image/Music.png" >
+            </button>
+
+            <button class="inner" id="gaming" value="20" onclick="execute2()">
+                <img width="300" height="300" src="image/Gaming.png">
+            </button>
+
+            <button class="inner" id="news" value="25" onclick="execute3()">
+                <img width="300" height="300" src="image/News.png">
+            </button>
+
+            <button class="inner" id="sports" value="17" onclick="execute4()">
+                <img  width="300" height="300" src="image/Sports.png">
+            </button>
+
+            <button class="inner" id="movies" value="30" onclick="execute5()">
+                <img width="300" height="300" src="image/Movies.png">
+            </button>
+    </div>
+</center>
+
+<center>
+    <div>
+        <button class="inner" id="auto" value="2" onclick="execute6()">
+                <img width="300" height="300" src="image/Auto.png">
+        </button>
+
+        <button class="inner" id="pets" value="15" onclick="execute7()">
+                <img width="300" height="300" src="image/Pets.png">
+        </button>
+
+        <button class="inner" id="edu" value="27" onclick="execute8()">
+                <img width="300" height="300" src="image/Education.png">
+        </button>
+
+        <button class="inner" id="blogs" value="22" onclick="execute9()">
+                <img  width="300" height="300" src="image/Blogs.png">
+        </button>
+
+        <button class="inner" id="travel" value="19" onclick="execute10()">
+                <img width="300" height="300" src="image/Travel.png">
+        </button>
+    </div>
+</center>
+
+
+<center>
+    <div class="product-container">
+        <div id="videoListContainer"></div>
+    </div>
+</center>
+</main>
+
+
+
+<footer id="Validation">
+    <br/>
+
+    <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> <br>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    <p> &copy; 2020 Jemael Autridge </p>
+</footer>
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="Trending%20Category/Main.js"></script>
+</body>
+</html>

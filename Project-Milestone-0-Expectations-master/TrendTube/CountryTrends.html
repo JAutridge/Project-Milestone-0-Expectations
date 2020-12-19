@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Youtube Trending Videos by Country</title>
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+</head>
+<body>
+<header>
+    <p><h1>
+    <a href="HomePage.html">
+        <img src="image/TrendTube.png">
+    </a>
+</h1></p>
+</header>
+<form id="yt-form">
+    <p>
+        <select id="order-input" required>
+            <option value="">SELECT COUNTRY</option>
+            <option value="US">United States</option>
+            <option value="AR">Argentina</option>
+            <option value="AU">Australia</option>
+            <option value="BE">Belgium</option>
+            <option value="CN">China</option>
+            <option value="CA">Canada</option>
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+            <option value="IN">India</option>
+            <option value="JP">Japan</option>
+            <option value="MX">Mexico</option>
+            <option value="NG">Nigeria</option>
+            <option value="PH">Philippines</option>
+            <option value="ES">Spain</option>
+            <option value="RU">Russia</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+</form>
+
+<div id="videoListContainer"></div>
+
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="CountryTrends.js"></script>
+</body>
+</html>
