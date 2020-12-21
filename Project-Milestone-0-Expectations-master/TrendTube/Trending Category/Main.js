@@ -50,8 +50,8 @@ function execute() {
                         const videoTitle = item.snippet.title;
                         const vc = item.statistics.viewCount;
                         output += `
-                    <li><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>Title: ${videoTitle}</p>
-                    <p>Views: ${vc}</p></li>`;
+                    <li><div class="solid"><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>Title: ${videoTitle}</p>
+                    <p>Views: ${vc}</p></div></li>`;
                     });
                     output += '</ul>';
 
@@ -86,8 +86,8 @@ function execute2() {
                         const videoTitle = item.snippet.title;
                         const vc = item.statistics.viewCount;
                         output += `
-                    <li><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>Title: ${videoTitle}</p>
-                    <p>Views: ${vc}</p></li>`;
+                    <li><div class="solid"><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>Title: ${videoTitle}</p>
+                    <p>Views: ${vc}</p></div></li>`;
                     });
                     output += '</ul>';
 
@@ -127,7 +127,8 @@ function execute3() {
                         const videoTitle = item.snippet.title;
 
                         output += `
-                    <li><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>${videoTitle}</p></li>`;
+                    <li><div class="solid"><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a>
+                    <p>${videoTitle}</p></div></li>`;
                     });
                     output += '</ul>';
 
@@ -163,8 +164,8 @@ function execute4() {
                         const videoTitle = item.snippet.title;
                         const vc = item.statistics.viewCount;
                         output += `
-                    <li><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>Title: ${videoTitle}</p>
-                    <p>Views: ${vc}</p></li>`;
+                    <li><div class="solid"><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>Title: ${videoTitle}</p>
+                    <p>Views: ${vc}</p></div></li>`;
                     });
                     output += '</ul>';
 
@@ -203,7 +204,8 @@ function execute5() {
                         const videoId = item.id.videoId;
                         const videoTitle = item.snippet.title;
                         output += `
-                    <li><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>${videoTitle}</p></li>`;
+                    <li><div class="solid"><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a>
+                    <p>${videoTitle}</p></div></li>`;
                     });
                     output += '</ul>';
 
@@ -239,8 +241,8 @@ function execute6() {
                         const videoTitle = item.snippet.title;
                         const vc = item.statistics.viewCount;
                         output += `
-                    <li><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>Title: ${videoTitle}</p>
-                    <p>Views: ${vc}</p></li>`;
+                    <li><div class="solid"><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>Title: ${videoTitle}</p>
+                    <p>Views: ${vc}</p></div></li>`;
                     });
                     output += '</ul>';
 
@@ -276,8 +278,8 @@ function execute7() {
                         const videoTitle = item.snippet.title;
                         const vc = item.statistics.viewCount;
                         output += `
-                    <li><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>Title: ${videoTitle}</p>
-                    <p>Views: ${vc}</p></li>`;
+                    <li><div class="solid"><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>Title: ${videoTitle}</p>
+                    <p>Views: ${vc}</p></div></li>`;
                     });
                     output += '</ul>';
 
@@ -315,7 +317,8 @@ function execute8() {
                         const videoId = item.id.videoId;
                         const videoTitle = item.snippet.title;
                         output += `
-                    <li><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>${videoTitle}</p></li>`;
+                    <li><div class="solid"><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a>
+                    <p>${videoTitle}</p></div></li>`;
                     });
                     output += '</ul>';
 
@@ -353,7 +356,8 @@ function execute9() {
                         const videoId = item.id.videoId;
                         const videoTitle = item.snippet.title;
                         output += `
-                    <li><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>${videoTitle}</p></li>`;
+                    <li><div class="solid"><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a>
+                    <p>${videoTitle}</p></div></li>`;
                     });
                     output += '</ul>';
 
@@ -390,7 +394,8 @@ function execute10() {
                         const videoId = item.id.videoId;
                         const videoTitle = item.snippet.title;
                         output += `
-                    <li><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>${videoTitle}</p></li>`;
+                    <li><div class="solid"><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a>
+                    <p>${videoTitle}</p></div></li>`;
                     });
                     output += '</ul>';
 
