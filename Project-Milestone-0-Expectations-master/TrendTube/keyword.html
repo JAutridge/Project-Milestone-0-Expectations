@@ -5,33 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Get YouTube Video by Keyword</title>
-     <link rel="stylesheet" href="HomePage.css" />
-     <script type="text/javascript" src="login.js"></script>
-    <style>
-        .paginate{
-            margin-right: 5px;
-        }
-        li {
-            display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 </head>
+
 <body>
 <header>
-<p><h1>
- <a href="HomePage.html">
-  <img src="image/TrendTube.png">
- </a>
+    <p><h1>
+    <a href="HomePage.html">
+        <img src="image/TrendTube.png">
+    </a>
 </h1></p>
 
+
 </header>
-
-
 <center>
-    <h1>Search For A Video</h1>
 <form id="yt-form">
-    <p><input type="text" id="keyword-input" placeholder="Enter keyword" size="50" required></p>
-    <p><input type="number" id="maxresult-input" placeholder="Max Results" min="1" max="50" size="50" required></p>
+    <p><input type="text" id="keyword-input" placeholder="Enter keyword" required></p>
+    <p><input type="number" id="maxresult-input" placeholder="Max Results" min="1" max="50" required></p>
     <p>
         <select id="order-input" required>
             <option value="">--SELECT ORDER--</option>
@@ -47,7 +38,11 @@
     </p>
 </form>
 </center>
- <h2><div id="videoListContainer" class="videoList"></div></h2>
+<center>
+    <div class="product-container">
+        <div id="videoListContainer"></div>
+    </div>
+</center>
 
 <script src="https://apis.google.com/js/api.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

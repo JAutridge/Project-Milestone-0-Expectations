@@ -50,8 +50,11 @@ function execute() {
                     listItems.forEach(item => {
                         const videoId = item.id;
                         const videoTitle = item.snippet.title;
+                        const chan = item.snippet.channelTitle;
+                        const date = item.snippet.publishedAt;
                         output += `
-                    <li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>${videoTitle}</p></li>
+                    <li><div class="solid"><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>${videoTitle}</p>
+                    <p>Channel Name: ${chan}</p><p>${date}</p></div></li>
                 `;
                     });
                     output += '</ul>';

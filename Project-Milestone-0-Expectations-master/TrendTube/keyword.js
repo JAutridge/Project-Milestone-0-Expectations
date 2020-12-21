@@ -48,29 +48,28 @@ function execute() {
                 // Handle the results here (response.result has the parsed body).
                 const listItems = response.result.items;
                 if (listItems) {
-                    let output = '<center><h1>Videos</h1></center><ul>';
+                    let output = '<h4>Videos</h4><ul>';
 
                     listItems.forEach(item => {
                         const videoId = item.id.videoId;
                         const videoTitle = item.snippet.title;
                         output += `
-                  <center> <li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p><h2>${videoTitle}</h2></p></li></center> 
+                    <li><a class="inner" data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><h2>${videoTitle}</h2></li>
                 `;
                     });
-
                     output += '</ul>';
 
                     if (response.result.prevPageToken) {
-                        output += `<h2><br><a class="paginate" href="#" data-id="${response.result.prevPageToken}" onclick="paginate(event, this)"></h2>Prev</a>`;
+                        output += `<br><a class="paginate" href="#" data-id="${response.result.prevPageToken}" onclick="paginate(event, this)">Prev</a>`;
                     }
 
                     if (response.result.nextPageToken) {
-                        output += `<h2><a href="#" class="paginate" data-id="${response.result.nextPageToken}" onclick="paginate(event, this)"></h2>Next</a>`;
+                        output += `<a href="#" class="paginate" data-id="${response.result.nextPageToken}" onclick="paginate(event, this)">Next</a>`;
                     }
+
                     // Output list
-                   videoList.innerHTML = output;
+                    videoList.innerHTML = output;
                 }
             },
             function(err) { console.error("Execute error", err); });
 }
-

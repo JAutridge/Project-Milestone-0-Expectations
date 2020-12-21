@@ -128,4 +128,20 @@ font-size: 50px;
     background-color: #000000;
     color: #f8f8f8;
 }
-
+.solid {
+border-style: solid;
+}
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  // Additional resets for further consistency
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 25%;
+  font-family: inherit;
+  font-size: 20px;
+  cursor: inherit;
+  line-height: inherit;
+}
